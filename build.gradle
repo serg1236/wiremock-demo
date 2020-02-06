@@ -1,0 +1,21 @@
+group 'com.demo.wiremock'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.4.RELEASE'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-jetty', version: '2.2.4.RELEASE'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '2.2.4.RELEASE'
+    implementation group: 'org.projectreactor', name: 'reactor-spring', version: '1.0.1.RELEASE'
+    implementation group: 'org.springframework', name: 'spring-tx', version: '5.2.3.RELEASE'
+
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.4.RELEASE'
+    testImplementation group: 'junit', name: 'junit', version: '4.13'
+    testImplementation group: 'com.github.tomakehurst', name: 'wiremock', version: '2.26.0'
+}

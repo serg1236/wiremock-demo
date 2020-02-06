@@ -1,0 +1,2 @@
+chuck:
+  base-url: http://localhost:${wiremock.port}
